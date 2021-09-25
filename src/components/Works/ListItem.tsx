@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './ListItem.module.css';
 import { Work } from '../../models/Work';
-import { worker } from 'cluster';
 
 const ListItem: React.FC<{ work: Work }> = (props) => {
   const handeOnClick = (e: any) => {

@@ -1,4 +1,4 @@
-import React, { Ref, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 import classes from './Navbar.module.css';
