@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useRef } from 'react';
 
-function App() {
+import About from './components/About/About';
+import Hero from './components/Hero/Hero';
+import ContactForm from './components/Modals/ContactForm';
+import Navbar from './components/Navbar/Navbar';
+import Timeline from './components/Timeline/Timeline';
+import Works from './components/Works/Works';
+
+const App = () => {
+  const heroRef = useRef<HTMLElement>(null);
+  const aboutMeRef = useRef<HTMLElement>(null);
+  const worksRef = useRef<HTMLElement>(null);
+  const timelineRef = useRef<HTMLElement>(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar
+        heroRef={heroRef}
+        aboutMeRef={aboutMeRef}
+        worksRef={worksRef}
+        timelineRef={timelineRef}
+      />
+      <ContactForm />
+      <section ref={heroRef} className="hero">
+        <Hero />
+      </section>
+      <section ref={aboutMeRef} className="about">
+        <About />
+      </section>
+      <section ref={worksRef} className="works">
+        <Works />
+      </section>
+      <section ref={timelineRef} className="timeline">
+        <Timeline />
+      </section>
+    </Fragment>
   );
-}
+};
 
 export default App;

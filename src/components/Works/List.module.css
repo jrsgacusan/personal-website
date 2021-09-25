@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.container .item {
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 600px;
+  margin: 10px;
+  box-shadow: 5px 5px 10px #0f0f0f59;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container .item {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}

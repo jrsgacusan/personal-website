@@ -1,0 +1,35 @@
+.container {
+  height: fit-content;
+}
+
+.container h1 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.container .btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container button {
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 24px;
+
+  border: 2px solid var(--main);
+  background-color: transparent;
+  color: var(--main);
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.container button:hover {
+  background-color: var(--main);
+  color: var(--accent);
+  font-size: 18px;
+}
