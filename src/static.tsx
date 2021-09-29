@@ -5,3 +5,5 @@ export const SMARTR_LINK =
   'https://www.smartr.me/public/profiles/juelrei.gacusan';
 export const GITHUB_LINK = 'https://github.com/jrsgacusan';
 export const LINKEDIN_LINK = 'https://www.linkedin.com/in/jrsgacusan';
+export const SOURCE_CODE_LINK =
+  'https://github.com/jrsgacusan/personal-website';

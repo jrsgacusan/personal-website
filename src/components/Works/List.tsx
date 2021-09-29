@@ -9,6 +9,7 @@ import picpa from '../../assets/images/picpa-mis.png';
 
 const list: Work[] = [
   {
+    isPublished: false,
     image: quicks,
     title: 'Quick Service Android Application',
     description:
@@ -17,6 +18,7 @@ const list: Work[] = [
     href: 'https://github.com/jrsgacusan/Quick-Service',
   },
   {
+    isPublished: false,
     image: bsu,
     title: 'BSU SMIS React App',
     description:
@@ -25,6 +27,7 @@ const list: Work[] = [
     href: 'https://github.com/jrsgacusan/iol-bsu-smis',
   },
   {
+    isPublished: true,
     image: picpa,
     title: 'PICPA MIS',
     description:

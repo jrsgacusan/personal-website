@@ -2,6 +2,18 @@ import { Timeline } from '../../models/Timeline';
 
 export const timelineElements: Timeline[] = [
   {
+    isButtonPresent: false,
+    href: '',
+    buttonText: '',
+    date: 'October 2021',
+    description:
+      'I was selected as a trainee for Goodfrontend.dev LTD. Goodfrontend.dev LTD was set up to help brands and retailers create successful commerce storefronts. As a trainee, I spent my time learning about frontend technologies using online resources and projects',
+    icon: 'work',
+    id: 5,
+    location: 'Remote',
+    title: 'Goodfrontend.dev Cadetship Programme',
+  },
+  {
     isButtonPresent: true,
     href: 'https://uc-bcf.edu.ph/',
     buttonText: 'View Website',

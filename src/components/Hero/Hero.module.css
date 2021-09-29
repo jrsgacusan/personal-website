@@ -87,6 +87,7 @@
   .div .main {
     flex-direction: column;
     text-align: center;
+    padding-top: 20px;
   }
   .div .main .left-content {
     padding-left: unset;

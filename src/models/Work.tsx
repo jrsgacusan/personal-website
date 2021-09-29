@@ -4,4 +4,5 @@ export type Work = {
   description: string;
   id: string;
   href: string;
+  isPublished: boolean;
 };

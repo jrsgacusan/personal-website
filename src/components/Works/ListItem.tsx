@@ -22,7 +22,7 @@ const ListItem: React.FC<{ work: Work }> = (props) => {
         <h1>{props.work.title}</h1>
         <p>{props.work.description}</p>
         <a href={props.work.href} target="__blank">
-          <h1 className={classes.view}>View </h1>
+          <h1 className={classes.view}>{props.work.isPublished? 'View Website': 'View Code'} </h1>
         </a>
       </div>
     </div>

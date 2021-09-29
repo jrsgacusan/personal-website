@@ -1,0 +1,17 @@
+.footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  height: auto;
+  color: white;
+}
+
+.footer .container {
+  padding: 18px 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .container .right-content a:hover {
+  color: antiquewhite;
+  text-decoration: none;
+}
