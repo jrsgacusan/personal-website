@@ -7,7 +7,7 @@ export const timelineElements: Timeline[] = [
     buttonText: '',
     date: 'October 2021',
     description:
-      'I was selected as a trainee for Goodfrontend.dev LTD. Goodfrontend.dev LTD was set up to help brands and retailers create successful commerce storefronts. As a trainee, I spent my time learning about frontend technologies using online resources and projects',
+      'I was selected as a trainee for Goodfrontend.dev LTD. Goodfrontend.dev LTD was set up to help brands and retailers create successful commerce storefronts. As a trainee, I spent my time learning about frontend technologies through online resources and projects.',
     icon: 'work',
     id: 5,
     location: 'Remote',

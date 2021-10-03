@@ -6,7 +6,7 @@ import ContactForm from './components/Modals/ContactForm';
 import Navbar from './components/Navbar/Navbar';
 import Timeline from './components/Timeline/Timeline';
 import Works from './components/Works/Works';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
 const App = () => {
   const heroRef = useRef<HTMLElement>(null);
   const aboutMeRef = useRef<HTMLElement>(null);
@@ -33,6 +33,7 @@ const App = () => {
       <section ref={timelineRef} className="timeline">
         <Timeline />
       </section>
+
       <Footer />
     </Fragment>
   );
