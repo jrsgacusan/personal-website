@@ -1,8 +1,6 @@
 .div {
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .div svg {
@@ -16,17 +14,22 @@
 .div .main {
   height: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
 }
 
 .div .main .left-content {
-  width: 50%;
+  text-align: center;
+  flex: 2;
 }
 .div .main .right-content {
   width: 50%;
 }
 
 .div .main .left-content {
-  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +65,7 @@
   color: var(--main);
   cursor: pointer;
   background-color: transparent;
+  align-self: center;
 }
 
 .div .main .left-content button:hover {
@@ -70,40 +74,34 @@
   color: white;
   transform: scale(1.2);
 }
-.div .main .right-content {
-  position: relative;
-  height: 100%;
-}
 
 .div .main .right-content .image {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: auto;
   transition: 0.65s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .div .main {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 20px;
+    flex-direction: unset;
+    gap: unset;
+    overflow: unset;
   }
+  .div .main .right-content {
+    align-self: flex-end;
+    flex: 1.5;
+  }
+
   .div .main .left-content {
-    padding-left: unset;
-    width: 100%;
+    padding-left: 18px;
+    flex: 1;
+    text-align: unset;
   }
+
   .div .main .left-content button {
-    margin: 0 auto;
+    align-self: unset;
   }
 }
 
-@media screen and (max-width: 576px) {
-  .div .main .right-content .image {
-    width: 100%;
-    height: auto;
-  }
-  .div .main .left-content {
-    height: 200%;
-  }
+@media screen and (min-width: 768px) {
 }
