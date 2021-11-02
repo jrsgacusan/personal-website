@@ -77,8 +77,6 @@
 
 .div .main .right-content .image {
   width: 100%;
-  height: auto;
-  transition: 0.65s;
 }
 
 @media screen and (min-width: 576px) {
@@ -93,15 +91,13 @@
   }
 
   .div .main .left-content {
-    padding-left: 18px;
+    padding-left: 1px;
     flex: 1;
     text-align: unset;
+    padding-left: 18px;
   }
 
   .div .main .left-content button {
     align-self: unset;
   }
-}
-
-@media screen and (min-width: 768px) {
 }
