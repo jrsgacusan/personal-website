@@ -2,6 +2,18 @@ import { Timeline } from '../../models/Timeline';
 
 export const timelineElements: Timeline[] = [
   {
+    isButtonPresent: true,
+    href: 'https://www.fitflop.com/',
+    buttonText: 'View Website',
+    date: 'November 2021',
+    description:
+      'Maintain the storefront codebase, optimize existing functionalities, develop new features, fix bugs and vulnerabilities that arise, and assist the business/stakeholders with front-end related requests. I work closely with backend engineers, QA engineers, DevOps engineers, business analyst and project manager to deliver production-ready outputs.',
+    icon: 'work',
+    id: 6,
+    location: 'Remote',
+    title: 'Fitflop Frontend Engineer - Subcontractor',
+  },
+  {
     isButtonPresent: false,
     href: '',
     buttonText: '',
