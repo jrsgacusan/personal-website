@@ -3,21 +3,33 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
-  height: fit-content;
-  margin-bottom: 20px;
   flex-direction: column;
   margin-right: 20px;
 
-  .item {
-    background-color: transparent;
+  .card {
+    margin: 10px;
+    border: none;
+    background-color: white;
     border-radius: 5px;
     width: 100%;
     margin: 10px;
     box-shadow: 5px 5px 10px #0f0f0f59;
-    height: 400px;
-    @include tablet {
-      height: unset;
+
+    img {
+      height: 200px;
+      object-fit: cover;
+
+      @include tablet {
+        height: unset;
+      }
+    }
+
+    p {
+      font-size: 18px;
+
+      @include tablet {
+        font-size: 16px;
+      }
     }
   }
 

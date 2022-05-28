@@ -19,10 +19,6 @@
     color: $accent;
     font-size: 48px;
     text-align: center;
-
-    @include desktop {
-      color: black;
-    }
   }
 
   .date {
