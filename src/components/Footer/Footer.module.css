@@ -3,12 +3,14 @@
   margin: 0 auto;
   height: auto;
   color: white;
+  padding: 0 10px 0 10px;
 }
 
 .footer .container {
   padding: 18px 0px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer .container .right-content a:hover {
@@ -16,7 +18,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: var(--mobile)) {
+@media screen and (max-width: 640px) {
   .footer .container {
     padding: 18px 8px;
     display: flex;
