@@ -2,9 +2,9 @@ import React from "react";
 import ListItem from "./ListItem";
 import classes from "./List.module.scss";
 import { Work } from "../../models/Work";
-import bsu from "../../assets/images/bsu-smis.png";
-import quicks from "../../assets/images/quick-s.png";
-import picpa from "../../assets/images/picpa-mis.png";
+import bsu from "../../assets/images/bsu-smis.webp";
+import quicks from "../../assets/images/quick-s.webp";
+import picpa from "../../assets/images/picpa-mis.webp";
 
 const list: Work[] = [
   {
