@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './ListItem.module.css';
+import classes from './ListItem.module.scss';
 import { Work } from '../../models/Work';
 
 const ListItem: React.FC<{ work: Work }> = (props) => {

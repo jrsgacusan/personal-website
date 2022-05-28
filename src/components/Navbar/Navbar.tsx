@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
-import classes from './Navbar.module.css';
+import classes from './Navbar.module.scss';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import { modalActions } from '../../store/modal-slice';
 

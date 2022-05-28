@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../Layout';
-import classes from './Timeline.module.css';
+import classes from './Timeline.module.scss';
 import { GiSchoolBag } from 'react-icons/gi';
 import { MdSchool } from 'react-icons/md';
 import { DiJavascript1 } from 'react-icons/di';

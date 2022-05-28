@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import './variables';
+@import './mixins';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 html,
 body {
   padding: 0;
@@ -29,26 +32,30 @@ button {
 section {
   width: 100%;
   height: 100vh;
+
+  @include tablet{
+     padding: 0px 10px;
+  }
 }
 
-section.hero {
-  background-color: var(--accent);
+.hero {
+  background-color: $accent;
 }
 
-section.about {
-  background-color: var(--main);
+.about {
+  background-color: $main;
   height: fit-content;
 }
 
-section.works {
-  background-color: var(--accent);
+.works {
+  background-color: $accent;
   height: fit-content;
   overflow: auto;
   padding: 45px 0;
 }
 
-section.timeline {
-  background-color: var(--main);
+.timeline {
+  background-color: $main;
   height: auto;
 }
 
@@ -58,14 +65,9 @@ section.timeline {
   --accent: #eeede7;
   --third: #e7d2cc;
 
-
   /* Breakpoints */
   --mobile: 640px;
   --tablet: 1024px;
 }
 
-@media screen and (max-width: var(--mobile)) {
-  section {
-    padding: 0px 10px;
-  }
-}
+

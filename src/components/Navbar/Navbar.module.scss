@@ -1,3 +1,6 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
 .header {
   position: fixed;
   padding: 0;
@@ -44,14 +47,11 @@
   transform: scale(1.2);
 }
 
-
-
 @media screen and (min-width: 640px) {
   .ul li {
     font-size: 12px;
   }
 }
-
 
 @media screen and (min-width: 1024px) {
   .ul li {
@@ -64,4 +64,3 @@
     justify-content: space-between;
   }
 }
-

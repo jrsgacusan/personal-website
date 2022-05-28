@@ -1,0 +1,38 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.container {
+  height: fit-content;
+
+  h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    border-radius: 5px;
+    outline: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 24px;
+
+    border: 2px solid $main;
+    background-color: transparent;
+    color: $main;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+
+  button:hover {
+    background-color: $main;
+    color: $accent;
+    font-size: 18px;
+  }
+}

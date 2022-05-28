@@ -1,0 +1,31 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.div {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+
+  .title {
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: $accent;
+    font-size: 48px;
+    text-align: center;
+
+    @include desktop {
+      color: black;
+    }
+  }
+
+  .date {
+    color: $accent;
+
+    @include desktop {
+      float: right;
+    }
+  }
+}

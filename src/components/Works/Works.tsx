@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import Layout from '../Layout';
 import List from './List';
-import classes from './Works.module.css';
+import classes from './Works.module.scss';
 const Works: React.FC = () => {
   return (
     <Layout>
