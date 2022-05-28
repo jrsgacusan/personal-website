@@ -1,10 +1,9 @@
 .div {
   width: 100%;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 120px 0;
+  padding: 20px 0px;
 }
 
 .div svg {
@@ -17,14 +16,14 @@
 
 .div .main {
   height: 100%;
-  display: flex;
 }
 
-.div .main .left-content {
-  width: 50%;
-}
+.div .main .left-content, 
 .div .main .right-content {
   width: 50%;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
 }
 
 .div .main .right-content {
@@ -32,24 +31,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 70%;
 }
 .div .main .right-content h1 {
   color: var(--accent);
 }
 .div .main .right-content p {
   color: var(--accent);
-  text-align: justify;
-  width: 70%;
   font-weight: 100;
   font-size: 12px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 10px 0 0;
 }
 .div .main .right-content .dash {
-  height: 5px;
-  width: 50px;
-  background-color: var(--third);
+  display: none;
+
 }
 .div .main .right-content .btns {
-  width: 70%;
+  width: 100%;
   padding-top: 10px;
 }
 .div .main .right-content .btns .first {
@@ -85,7 +87,6 @@
 }
 
 .div .main .left-content {
-  padding-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,28 +95,26 @@
 }
 
 .div .main .left-content .image {
-  width: 50%;
-  margin-left: auto;
-  position: relative;
   top: 0;
   left: 0;
-  outline: 10px solid var(--main);
-  box-shadow: -20px 20px 0px var(--third);
   transition: 0.4s;
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
 }
 
-@media screen and (max-width: 768px) {
-  .div .main .left-content .image {
-    width: 70%;
-    outline: none;
-    box-shadow: none;
+@media screen and (min-width: 640px ) {
+
+  .div .main {
+    display: flex ;
   }
-}
 
-@media screen and (max-width: var(--mobile)) {
   .div .main .right-content p {
-    width: unset;
-    text-align: center;
+    width: 70%;
+    text-align: unset;
   }
 
   .div .main .right-content .btns {
@@ -123,37 +122,26 @@
   }
 
   .div .main .left-content .image {
-    height: auto;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin: 0 auto;
+    width: 70%;
+    align-self: flex-end;
+    outline: 10px solid var(--main);
+    box-shadow: -20px 20px 0px var(--third);
   }
 
-  .div .main .left-content,
-  .div .main .right-content {
-    padding: 0;
-    margin: 0;
-    margin: 0 auto;
-  }
-
-  .div .main .right-content {
-    width: 100%;
-    text-align: center;
-    height: 70%;
-  }
   .div .main .right-content .dash {
-    margin: 0 auto;
     margin-bottom: 10px;
-  }
-
-  .div .main {
-    flex-direction: column;
-    justify-content: space-around;
+    height: 5px;
+    width: 50px;
+    background-color: var(--third);
+    display: unset;
   }
 
   .div {
-    padding: 20px 0px;
+    padding: 120px 0;
+  }
+
+  .div .main .left-content, .div .main .right-content{
+    flex: 1;
   }
 
   .div .main .left-content {
@@ -161,5 +149,11 @@
     margin: 0 auto;
     text-align: center;
     position: unset;
+
+  }
+
+  .div .main .right-content {
+    text-align: unset;
+    height: unset;
   }
 }
