@@ -112,7 +112,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: var(--mobile)) {
   .div .main .right-content p {
     width: unset;
     text-align: center;

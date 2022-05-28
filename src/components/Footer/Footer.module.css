@@ -16,10 +16,13 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: var(--mobile)) {
   .footer .container {
     padding: 18px 8px;
     display: flex;
     justify-content: space-between;
   }
 }
+
+
+
