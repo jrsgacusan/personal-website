@@ -8,6 +8,10 @@
   flex-direction: column;
   height: auto;
 
+  .button {
+    float: right;
+  }
+
   .title {
     margin: 0;
     font-weight: bold;
@@ -22,10 +26,6 @@
   }
 
   .date {
-    color: $accent;
-
-    @include desktop {
-      float: right;
-    }
+    color: $main;
   }
 }

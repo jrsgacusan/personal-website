@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../Layout';
-import classes from './About.module.css';
+import classes from './About.module.scss';
 import portrait from '../../assets/portrait.jpg';
 import { AiOutlineLink } from 'react-icons/ai';
 import { ABOUT_ME, LINKEDIN_LINK } from '../../static';

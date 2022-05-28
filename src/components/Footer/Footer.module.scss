@@ -1,0 +1,30 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  height: auto;
+  color: white;
+  padding: 0 10px 0 10px;
+
+  .container {
+    padding: 18px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .right-content {
+      a:hover {
+        color: antiquewhite;
+        text-decoration: none;
+      }
+    }
+
+    @include tablet {
+      padding: 18px 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

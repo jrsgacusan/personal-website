@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Layout from '../Layout';
-import classes from './Hero.module.css';
+import classes from './Hero.module.scss';
 import me from '../../assets/me.png';
 import { useAppDispatch } from '../../store/hooks';
 import { modalActions } from '../../store/modal-slice';
