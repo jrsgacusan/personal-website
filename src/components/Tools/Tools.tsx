@@ -3,15 +3,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { toolList } from "./ToolsElements";
 import "./Tools.scss";
 import "swiper/css";
-import { Navigation, Autoplay } from "swiper";
+import { Navigation, Autoplay, Pagination } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import mediaQueries from "../../utils/mediaQueries";
 
 const slidesPerScreenSizeMap = {
-  small: 1.5,
-  medium: 3.5,
-  large: 4.5,
+  small: 1,
+  medium: 3,
+  large: 4,
+};
+const spacePerScreenSizeMap = {
+  small: 50,
+  medium: 100,
+  large: 100,
 };
 
 const Tools: React.FC = () => {
@@ -33,8 +38,13 @@ const Tools: React.FC = () => {
     <div className="tools-container">
       <h1>Technologies I Work With</h1>
       <Swiper
-        modules={[Navigation, Autoplay]}
-        spaceBetween={50}
+        modules={[Navigation, Autoplay, Pagination]}
+        spaceBetween={
+          spacePerScreenSizeMap[
+            screenSize as keyof typeof slidesPerScreenSizeMap
+          ]
+        }
+        autoplay
         grabCursor
         slidesPerView={
           slidesPerScreenSizeMap[

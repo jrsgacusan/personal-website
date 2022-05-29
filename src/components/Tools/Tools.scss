@@ -12,6 +12,7 @@
 .swiper {
   width: 100%;
   overflow: visible;
+  z-index: 0 !important;
 
   .swiper-wrapper {
     display: flex;
@@ -23,16 +24,21 @@
       display: flex;
       align-items: center;
       overflow: visible;
+      justify-content: center;
 
       img {
-        display: block;
-        width: 100%;
-        padding: 0 40px 0 0;
+        display: flex;
+        width: 50%;
 
         @include tablet {
+          width: 100%;
           padding: unset;
         }
       }
     }
+  }
+
+  .swiper-pagination {
+    bottom: 5px !important;
   }
 }

@@ -9,6 +9,7 @@ const Navbar: React.FC<{
   aboutMeRef: any;
   worksRef: any;
   timelineRef: any;
+  toolsRef: any;
 }> = (props) => {
   const dispatch = useAppDispatch();
   const isModalOpen = useAppSelector((state) => state.modal.isContactModalOpen);
@@ -46,6 +47,11 @@ const Navbar: React.FC<{
       top: props.timelineRef.current.offsetTop,
       behavior: "smooth",
     });
+  const scrollToTools = () =>
+    window.scrollTo({
+      top: props.toolsRef.current.offsetTop,
+      behavior: "smooth",
+    });
 
   const handleOnClick = () => {
     dispatch(modalActions.openContactModal());
@@ -67,6 +73,7 @@ const Navbar: React.FC<{
       <ul className={classes.ul}>
         <li onClick={scrollToTop}>Home</li>
         <li onClick={scrollToAboutMe}>About Me</li>
+        <li onClick={scrollToTools}>Tools</li>
         <li onClick={scrollToWorks}>Works</li>
         <li onClick={scrollToTimeline}>Timeline</li>
       </ul>

@@ -21,6 +21,7 @@ const App = () => {
         aboutMeRef={aboutMeRef}
         worksRef={worksRef}
         timelineRef={timelineRef}
+        toolsRef={toolsRef}
       />
       <ContactForm />
       <div className={classes.sections}>
