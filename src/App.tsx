@@ -7,11 +7,13 @@ import Timeline from "./components/Timeline/Timeline";
 import Works from "./components/Works/Works";
 import Footer from "./components/Footer/Footer";
 import classes from "./scss/App.module.scss";
+import Tools from "./components/Tools/Tools";
 const App = () => {
   const heroRef = useRef<HTMLElement>(null);
   const aboutMeRef = useRef<HTMLElement>(null);
   const worksRef = useRef<HTMLElement>(null);
   const timelineRef = useRef<HTMLElement>(null);
+  const toolsRef = useRef<HTMLElement>(null);
   return (
     <Fragment>
       <Navbar
@@ -27,6 +29,9 @@ const App = () => {
         </section>
         <section ref={aboutMeRef} className={classes.about}>
           <About />
+        </section>
+        <section ref={toolsRef} className={classes.tools}>
+          <Tools />
         </section>
         <section ref={worksRef} className={classes.works}>
           <Works />

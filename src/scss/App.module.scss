@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./mixins";
 
 .sections {
   .hero {
@@ -8,6 +9,16 @@
   .about {
     background-color: $main;
     height: fit-content;
+  }
+
+  .tools {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 40px 10px;
+
+    @include tablet {
+      padding: 120px 10px;
+    }
   }
 
   .works {
