@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Timeline from "./components/Timeline/Timeline";
 import Works from "./components/Works/Works";
 import Footer from "./components/Footer/Footer";
+import classes from "./scss/App.module.scss";
 const App = () => {
   const heroRef = useRef<HTMLElement>(null);
   const aboutMeRef = useRef<HTMLElement>(null);
@@ -20,21 +21,20 @@ const App = () => {
         timelineRef={timelineRef}
       />
       <ContactForm />
-      <div className="sections">
-        <section ref={heroRef} className="hero">
+      <div className={classes.sections}>
+        <section ref={heroRef} className={classes.hero}>
           <Hero />
         </section>
-        <section ref={aboutMeRef} className="about">
+        <section ref={aboutMeRef} className={classes.about}>
           <About />
         </section>
-        <section ref={worksRef} className="works">
+        <section ref={worksRef} className={classes.works}>
           <Works />
         </section>
-        <section ref={timelineRef} className="timeline">
+        <section ref={timelineRef} className={classes.timeline}>
           <Timeline />
         </section>
       </div>
-
       <Footer />
     </Fragment>
   );

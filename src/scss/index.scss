@@ -37,26 +37,3 @@ section {
     padding: 0px 10px;
   }
 }
-
-.sections {
-  .hero {
-    background-color: $accent;
-  }
-
-  .about {
-    background-color: $main;
-    height: fit-content;
-  }
-
-  .works {
-    background-color: $accent;
-    height: fit-content;
-    overflow: auto;
-    padding: 45px 0;
-  }
-
-  .timeline {
-    background-color: $main;
-    height: auto;
-  }
-}
