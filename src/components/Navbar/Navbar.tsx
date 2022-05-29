@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-
 import classes from "./Navbar.module.scss";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { modalActions } from "../../store/modal-slice";
@@ -21,9 +20,9 @@ const Navbar: React.FC<{
   });
 
   useEffect(() => {
-    var header = document.querySelector("header");
+    var nav = document.querySelector("nav");
     if (isModalOpen) {
-      header!.style.opacity = "0";
+      nav!.style.opacity = "0";
     }
   }, [isModalOpen]);
 
