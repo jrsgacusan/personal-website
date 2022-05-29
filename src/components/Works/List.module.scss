@@ -18,6 +18,11 @@
     img {
       height: 200px;
       object-fit: cover;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       @include tablet {
         height: unset;

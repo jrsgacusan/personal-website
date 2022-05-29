@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { Modal, Button, Form, Alert } from 'react-bootstrap';
-import { modalActions } from '../../store/modal-slice';
-import { useAppSelector, useAppDispatch } from '../../store/hooks';
-import emailjs from 'emailjs-com';
+import React, { useState } from "react";
+import { Modal, Button, Form, Alert } from "react-bootstrap";
+import { modalActions } from "../../store/modal-slice";
+import { useAppSelector, useAppDispatch } from "../../store/hooks";
+import emailjs from "emailjs-com";
 
-const ContactForm: React.FC = (props) => {
+const ContactForm: React.FC = () => {
   const [error, seterror] = useState(null);
   const isContactModalOpen = useAppSelector(
     (state) => state.modal.isContactModalOpen
@@ -24,10 +24,10 @@ const ContactForm: React.FC = (props) => {
 
     emailjs
       .sendForm(
-        'service_x9hjr4v',
-        'template_ozr8flg',
+        "service_x9hjr4v",
+        "template_ozr8flg",
         e.target,
-        'user_6IVAvblcWdCdBpRCBkWsb'
+        "user_6IVAvblcWdCdBpRCBkWsb"
       )
       .then(
         (result) => {
@@ -75,7 +75,7 @@ const ContactForm: React.FC = (props) => {
             Close
           </Button>
           <Button disabled={isLoading} type="submit" variant="primary">
-            {isLoading ? 'Sending...' : 'Send Message'}
+            {isLoading ? "Sending..." : "Send Message"}
           </Button>
         </Modal.Footer>
       </Form>
