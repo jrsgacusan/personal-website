@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
+import React, { useEffect } from "react";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
-import classes from './Navbar.module.scss';
-import { useAppDispatch, useAppSelector } from '../../store/hooks';
-import { modalActions } from '../../store/modal-slice';
+import classes from "./Navbar.module.scss";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { modalActions } from "../../store/modal-slice";
 
 const Navbar: React.FC<{
   heroRef: any;
@@ -13,39 +13,39 @@ const Navbar: React.FC<{
 }> = (props) => {
   const dispatch = useAppDispatch();
   const isModalOpen = useAppSelector((state) => state.modal.isContactModalOpen);
-  window.addEventListener('scroll', function () {
-    var header = this.document.querySelector('header');
+  window.addEventListener("scroll", function () {
+    var nav = this.document.querySelector("nav");
     // header!.classList.toggle(`${classes.sticky}`, window.scrollY > 0);
     let opacity = window.scrollY / 1000 >= 0.9 ? 0.9 : window.scrollY / 1000;
-    header!.style.opacity = opacity.toString();
+    nav!.style.opacity = opacity.toString();
   });
 
   useEffect(() => {
-    var header = document.querySelector('header');
+    var header = document.querySelector("header");
     if (isModalOpen) {
-      header!.style.opacity = '0';
+      header!.style.opacity = "0";
     }
   }, [isModalOpen]);
 
   const scrollToTop = () =>
     window.scrollTo({
       top: props.heroRef.current.offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   const scrollToAboutMe = () =>
     window.scrollTo({
       top: props.aboutMeRef.current.offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   const scrollToWorks = () =>
     window.scrollTo({
       top: props.worksRef.current.offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   const scrollToTimeline = () =>
     window.scrollTo({
       top: props.timelineRef.current.offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
 
   const handleOnClick = () => {
@@ -53,15 +53,15 @@ const Navbar: React.FC<{
   };
 
   return (
-    <header className={classes.header}>
-      <div className={classes['left-content']}>
-        <h1 style={{ cursor: 'pointer' }} onClick={handleOnClick}>
-          <AiOutlineMail style={{ margin: '0', marginRight: '5px' }} />
+    <nav className={classes.nav}>
+      <div className={classes["left-content"]}>
+        <h1 style={{ cursor: "pointer" }} onClick={handleOnClick}>
+          <AiOutlineMail style={{ margin: "0", marginRight: "5px" }} />
           juelreigacusan22@gmail.com
         </h1>
         <h1>
-          {' '}
-          <AiOutlinePhone style={{ margin: '0', marginRight: '5px' }} />
+          {" "}
+          <AiOutlinePhone style={{ margin: "0", marginRight: "5px" }} />
           +6397 7375 7020
         </h1>
       </div>
@@ -71,7 +71,7 @@ const Navbar: React.FC<{
         <li onClick={scrollToWorks}>Works</li>
         <li onClick={scrollToTimeline}>Timeline</li>
       </ul>
-    </header>
+    </nav>
   );
 };
 
