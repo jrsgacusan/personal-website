@@ -3,9 +3,21 @@ import { Timeline } from "../../models/Timeline";
 export const timelineElements: Timeline[] = [
   {
     isButtonPresent: true,
-    href: "https://www.fitflop.com/",
+    href: "https://www.cualia.io/",
     buttonText: "View Website",
-    date: "November 2021",
+    date: "June 2022 - Present",
+    description:
+      "Provide my expertise in refactoring, optimizing, and developing features for the start-up project, Cualia, which is an app mainly used by medical laboratory experts to streamline their works.",
+    icon: "work",
+    id: 7,
+    location: "Remote",
+    title: "Cualia React Developer - Freelance",
+  },
+  {
+    isButtonPresent: true,
+    href: "https://www.fitflop.com/",
+    buttonText: "View Live Website",
+    date: "November 2021 - November 2022",
     description:
       "Maintain the storefront codebase, optimize existing functionalities, develop new features, fix bugs and vulnerabilities that arise, and assist the business/stakeholders with front-end related requests. I work closely with backend engineers, QA engineers, DevOps engineers, business analyst and project manager to deliver production-ready outputs.",
     icon: "work",
@@ -16,8 +28,8 @@ export const timelineElements: Timeline[] = [
   {
     isButtonPresent: true,
     href: "https://goodfrontend.dev/",
-    buttonText: "View Website",
-    date: "October 2021",
+    buttonText: "View Live Website",
+    date: "October 2021 - November 2022",
     description:
       "I was selected as a trainee for Goodfrontend.dev LTD. Goodfrontend.dev LTD was set up to help brands and retailers create successful commerce storefronts. As a trainee, I spent my time learning about frontend technologies through online resources and projects.",
     icon: "work",
@@ -46,8 +58,7 @@ export const timelineElements: Timeline[] = [
       "As an intern, I developed front-end components using technologies such as React.js, JavaScript, HTML, CSS, and Bootstrap. During my tenure as an intern in IOL, I developed two React projects, BSU SMIS and PCIPA SMIS.",
     icon: "work",
     id: 2,
-    location:
-      "Ruperto Bldg., Villa Silvina Cmpd., #15 Outlook Drive 2600 Baguio City, Philippines",
+    location: "Ruperto Bldg., Villa Silvina Cmpd., #15 Outlook Drive 2600 Baguio City, Philippines",
     title: "Front End Developer Intern",
   },
   {
